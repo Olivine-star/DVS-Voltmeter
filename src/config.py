@@ -32,9 +32,12 @@ elif cfg.SENSOR.CAMERA_TYPE == 'DVS240':
 
 # Directories
 __C.DIR                                 = edict()
-__C.DIR.IN_PATH = 'data_samples/interp/'
-__C.DIR.OUT_PATH = 'data_samples/output/'
+# __C.DIR.IN_PATH = 'data_samples/interp/'
+# __C.DIR.OUT_PATH = 'data_samples/output/'
 
+# src/config.py 保持不变也可；或者改成你的默认：
+__C.DIR.IN_PATH  = r'C:\code\EventSR-BMCNet\dataset\rgb-syn\processed'
+__C.DIR.OUT_PATH = r'C:\code\EventSR-BMCNet\dataset\rgb-syn\event_process'
 
 # Visualize
 __C.Visual                              = edict()
